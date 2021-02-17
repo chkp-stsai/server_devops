@@ -29,7 +29,7 @@ jobs:
     
   - task: AWSShellScript@1
     inputs:
-        awsCredentials: 'rolandop-cp'
+        awsCredentials: 'sean101482'
         regionName: $(AWS_REGION)
         scriptType: 'inline'
         inlineScript: 
