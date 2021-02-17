@@ -29,7 +29,7 @@ jobs:
     
   - task: AWSShellScript@1
     inputs:
-        awsCredentials: 'sean101482'
+        awsCredentials: 'azure-aws'
         regionName: $(AWS_REGION)
         scriptType: 'inline'
         inlineScript: 
@@ -40,5 +40,4 @@ jobs:
     inputs:
       targetPath: '$(System.DefaultWorkingDirectory)/cloudguard_output'
       artifact: 'cloudguard_output'
-      publishLocation: 'pipeline'
     displayName: 'Publishing Artifacts'
